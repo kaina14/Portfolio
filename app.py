@@ -56,40 +56,36 @@ st.markdown("""
             margin-top: 20px;
         }
         
-        .sidebar .sidebar-content {
+        .project-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+        
+        .project-card {
+            width: 48%;
             background-color: #2A2B2E;
+            border-radius: 10px;
             padding: 20px;
-        }
-
-        .sidebar .sidebar-content h1 {
-            text-align: center;
             margin-bottom: 20px;
+            text-align: center;
+        }
+        
+        .project-card img {
+            max-width: 100%;
+            border-radius: 10px;
         }
 
-        .sidebar .sidebar-content .sidebar-nav {
-            font-size: 1.2rem;
-            color: #FFFFFF;
-            list-style: none;
-            padding: 0;
-        }
-
-        .sidebar .sidebar-content .sidebar-nav li {
-            margin-bottom: 10px;
-        }
-
-        .sidebar .sidebar-content .sidebar-nav li a {
+        .project-card h4 {
+            margin-top: 15px;
             color: #E5E5E5;
-            text-decoration: none;
-            display: block;
-            padding: 10px;
-            border-radius: 5px;
-            background-color: #3A3B3D;
-            transition: background-color 0.3s;
+            font-size: 1.25rem;
         }
 
-        .sidebar .sidebar-content .sidebar-nav li a:hover {
-            background-color: #565BF7;
-            color: #FFFFFF;
+        .project-card p {
+            margin-top: 10px;
+            color: #C7C7C7;
+            font-size: 1rem;
         }
 
         footer {
@@ -99,7 +95,7 @@ st.markdown("""
             text-align: center;
             color: #FFFFFF;
         }
-
+        
     </style>
     """, unsafe_allow_html=True)
 
@@ -133,16 +129,38 @@ elif pages == "Skills":
 # Projects Section
 elif pages == "Projects":
     st.markdown("<h2 class='section-title'>Projects</h2>", unsafe_allow_html=True)
-    project_data = {
-        "Cyclone Intensity Estimation": "Developed a Quantum Machine Learning Algorithm achieving 93% accuracy.",
-        "Superstore Sales Analysis": "Designed a PowerBI dashboard to forecast sales, identify KPIs, and analyze trends.",
-        "Crop Recommendation System": "Developed a recommendation system using Random Forest and Naive Bayes, achieving 99% accuracy.",
-        "Chronic Disease Prediction": "Implemented Graph Neural Networks for disease prediction, achieving 98% accuracy."
-    }
+    
+    # Project 1
+    st.markdown("""
+    <div class="project-container">
+        <div class="project-card">
+            <img src="https://cdn-icons-png.flaticon.com/512/2133/2133009.png" alt="Project Image">
+            <h4>Project 1</h4>
+            <p>A web application that provides movie recommendations based on user preferences.</p>
+        </div>
+        <div class="project-card">
+            <img src="https://cdn-icons-png.flaticon.com/512/2133/2133009.png" alt="Project Image">
+            <h4>Project 2</h4>
+            <p>A Streamlit-based web app that colorizes black and white images and offers image manipulation features.</p>
+        </div>
+    </div>
+    """, unsafe_allow_html=True)
 
-    for project, description in project_data.items():
-        with st.expander(f"{project}"):
-            st.write(description)
+    # Project 2
+    st.markdown("""
+    <div class="project-container">
+        <div class="project-card">
+            <img src="https://cdn-icons-png.flaticon.com/512/2133/2133009.png" alt="Project Image">
+            <h4>Project 3</h4>
+            <p>A data analysis project that uses PowerBI to analyze and forecast sales trends.</p>
+        </div>
+        <div class="project-card">
+            <img src="https://cdn-icons-png.flaticon.com/512/2133/2133009.png" alt="Project Image">
+            <h4>Project 4</h4>
+            <p>A machine learning project for predicting chronic diseases using graph neural networks.</p>
+        </div>
+    </div>
+    """, unsafe_allow_html=True)
 
 # Research Works and Publications Section
 elif pages == "Research Works and Publications":
