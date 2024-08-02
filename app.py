@@ -1,11 +1,7 @@
 import streamlit as st
-from PIL import Image
 
 # Set page configuration
 st.set_page_config(page_title="Kaina Shaikh - Portfolio", page_icon=":star:", layout="wide")
-
-# Load images
-profile_image = Image.open('your_profile_image_path.jpg')  # Replace with your profile image path
 
 # Custom CSS for styling
 st.markdown("""
@@ -34,19 +30,10 @@ st.markdown("""
         .stMarkdown {
             color: #E5E5E5;
         }
-        .avatar {
-            border-radius: 50%;
-            display: block;
-            margin-left: auto;
-            margin-right: auto;
-            width: 150px;
-            margin-bottom: 20px;
-        }
     </style>
     """, unsafe_allow_html=True)
 
 # Sidebar Navigation
-st.sidebar.image(profile_image, use_column_width=True, caption="Kaina Shaikh")
 st.sidebar.title("Navigation")
 pages = st.sidebar.radio("Go to", ["Introduction", "Skills", "Projects", "Research Works and Publications", "Achievements", "Services", "Contact Information", "Get In Touch"])
 
