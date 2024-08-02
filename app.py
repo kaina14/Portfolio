@@ -14,8 +14,8 @@ st.markdown("""
             background-color: #1E1E1E;
         }
         
-        .sidebar .sidebar-content {
-            background-color: #2A2B2E;
+        .stApp {
+            margin: 0 auto;
             padding: 20px;
         }
         
@@ -99,101 +99,91 @@ st.markdown("""
     </style>
     """, unsafe_allow_html=True)
 
-# Sidebar Navigation
-st.sidebar.title("Kaina Shaikh")
-st.sidebar.markdown("<h3 style='color: #E5E5E5;'>Navigation</h3>", unsafe_allow_html=True)
-pages = st.sidebar.radio("Go to", ["Introduction", "Skills", "Projects", "Research Works and Publications", "Achievements", "Services", "Contact Information", "Get In Touch"])
-
 # Introduction Section
-if pages == "Introduction":
-    st.markdown("<h2 class='section-title'>Introduction</h2>", unsafe_allow_html=True)
-    st.markdown("<h3>Hello,</h3>", unsafe_allow_html=True)
-    st.markdown("<h1 style='font-size: 3rem;'>I'm Kaina Shaikh!</h1>", unsafe_allow_html=True)
-    st.write("I am a motivated and dedicated data scientist with a strong passion for artificial intelligence (AI) and machine learning (ML). My interests include AI, ML, Quantum Machine Learning, and more.")
-    st.button("Download Resume")
-    st.markdown("<hr style='border-top: 3px solid #565BF7;'>", unsafe_allow_html=True)
-    st.write("Wants to Know More About Me?")
-    st.text_input("Ask Anything About Me !!", "")
+st.markdown("<h2 class='section-title'>Introduction</h2>", unsafe_allow_html=True)
+st.markdown("<h3>Hello,</h3>", unsafe_allow_html=True)
+st.markdown("<h1 style='font-size: 3rem;'>I'm Kaina Shaikh!</h1>", unsafe_allow_html=True)
+st.write("I am a motivated and dedicated data scientist with a strong passion for artificial intelligence (AI) and machine learning (ML). My interests include AI, ML, Quantum Machine Learning, and more.")
+st.button("Download Resume")
+st.markdown("<hr style='border-top: 3px solid #565BF7;'>", unsafe_allow_html=True)
+st.write("Wants to Know More About Me?")
+st.text_input("Ask Anything About Me !!", "")
 
 # Skills Section
-elif pages == "Skills":
-    st.markdown("<h2 class='section-title'>Skills</h2>", unsafe_allow_html=True)
-    st.write("Here are some of my technical skills:")
-    skills = ["C++", "Python", "SQL", "Git", "Numpy", "Matplotlib", "Sklearn", "Pandas", 
-              "Tensorflow", "Pytorch", "OpenCV", "Streamlit", "Data Science", "Artificial Intelligence",
-              "Machine Learning", "Deep Learning", "Quantum AI", "PowerBI", "Tableau"]
-    
-    for skill in skills:
-        st.button(skill)
+st.markdown("<h2 class='section-title'>Skills</h2>", unsafe_allow_html=True)
+st.write("Here are some of my technical skills:")
+skills = ["C++", "Python", "SQL", "Git", "Numpy", "Matplotlib", "Sklearn", "Pandas", 
+          "Tensorflow", "Pytorch", "OpenCV", "Streamlit", "Data Science", "Artificial Intelligence",
+          "Machine Learning", "Deep Learning", "Quantum AI", "PowerBI", "Tableau"]
+
+for skill in skills:
+    st.button(skill)
 
 # Projects Section
-elif pages == "Projects":
-    st.markdown("<h2 class='section-title'>Projects</h2>", unsafe_allow_html=True)
+st.markdown("<h2 class='section-title'>Projects</h2>", unsafe_allow_html=True)
     
-    # Project 1
-    st.markdown("""
-    <div class="project-container">
-        <div class="project-card">
-            <img src="https://cdn-icons-png.flaticon.com/512/2133/2133009.png" alt="Project Image">
-            <h4>Project 1</h4>
-            <p>A web application that provides movie recommendations based on user preferences.</p>
-        </div>
-        <div class="project-card">
-            <img src="https://cdn-icons-png.flaticon.com/512/2133/2133009.png" alt="Project Image">
-            <h4>Project 2</h4>
-            <p>A Streamlit-based web app that colorizes black and white images and offers image manipulation features.</p>
-        </div>
+# Project 1
+st.markdown("""
+<div class="project-container">
+    <div class="project-card">
+        <img src="https://via.placeholder.com/300" alt="Project Image">
+        <h4>Project 1</h4>
+        <p>A web application that provides movie recommendations based on user preferences.</p>
     </div>
-    """, unsafe_allow_html=True)
+    <div class="project-card">
+        <img src="https://via.placeholder.com/300" alt="Project Image">
+        <h4>Project 2</h4>
+        <p>A Streamlit-based web app that colorizes black and white images and offers image manipulation features.</p>
+    </div>
+</div>
+""", unsafe_allow_html=True)
 
-    # Project 2
-    st.markdown("""
-    <div class="project-container">
-        <div class="project-card">
-            <img src="https://cdn-icons-png.flaticon.com/512/2133/2133009.png" alt="Project Image">
-            <h4>Project 3</h4>
-            <p>A data analysis project that uses PowerBI to analyze and forecast sales trends.</p>
-        </div>
-        <div class="project-card">
-            <img src="https://cdn-icons-png.flaticon.com/512/2133/2133009.png" alt="Project Image">
-            <h4>Project 4</h4>
-            <p>A machine learning project for predicting chronic diseases using graph neural networks.</p>
-        </div>
+# Project 2
+st.markdown("""
+<div class="project-container">
+    <div class="project-card">
+        <img src="https://via.placeholder.com/300" alt="Project Image">
+        <h4>Project 3</h4>
+        <p>A data analysis project that uses PowerBI to analyze and forecast sales trends.</p>
     </div>
-    """, unsafe_allow_html=True)
+    <div class="project-card">
+        <img src="https://via.placeholder.com/300" alt="Project Image">
+        <h4>Project 4</h4>
+        <p>A machine learning project for predicting chronic diseases using graph neural networks.</p>
+    </div>
+</div>
+""", unsafe_allow_html=True)
 
 # Research Works and Publications Section
-elif pages == "Research Works and Publications":
-    st.markdown("<h2 class='section-title'>Research Works and Publications</h2>", unsafe_allow_html=True)
-    st.write("Details about your research works and publications will go here.")
+st.markdown("<h2 class='section-title'>Research Works and Publications</h2>", unsafe_allow_html=True)
+st.write("Details about your research works and publications will go here.")
 
 # Achievements Section
-elif pages == "Achievements":
-    st.markdown("<h2 class='section-title'>Achievements</h2>", unsafe_allow_html=True)
-    st.write("Details about your achievements will go here.")
+st.markdown("<h2 class='section-title'>Achievements</h2>", unsafe_allow_html=True)
+st.write("Details about your achievements will go here.")
 
 # Services Section
-elif pages == "Services":
-    st.markdown("<h2 class='section-title'>Services</h2>", unsafe_allow_html=True)
-    st.write("Details about services you offer will go here.")
+st.markdown("<h2 class='section-title'>Services</h2>", unsafe_allow_html=True)
+st.write("Details about services you offer will go here.")
 
 # Contact Information Section
-elif pages == "Contact Information":
-    st.markdown("<h2 class='section-title'>Contact Information</h2>", unsafe_allow_html=True)
-    st.write("Feel free to reach out to me via email or connect with me on LinkedIn.")
-    st.markdown("📧 Email: kainashaikh@gmail.com")
-    st.markdown("🔗 [LinkedIn](https://www.linkedin.com/in/kaina-s-351101225/)")
-    st.markdown("🖥️ [GitHub](https://github.com/kaina14)")
+st.markdown("<h2 class='section-title'>Contact Information</h2>", unsafe_allow_html=True)
+st.write("Feel free to reach out to me via email or connect with me on LinkedIn.")
+st.markdown("📧 Email: kainashaikh@gmail.com")
+st.markdown("🔗 [LinkedIn](https://www.linkedin.com/in/kaina-s-351101225/)")
+st.markdown("🖥️ [GitHub](https://github.com/kaina14)")
 
 # Get In Touch Section
-elif pages == "Get In Touch":
-    st.markdown("<h2 class='section-title'>Get In Touch</h2>", unsafe_allow_html=True)
-    st.write("Please fill out the form below to get in touch with me.")
-    st.text_input("Your Name", "")
-    st.text_input("Your Email", "")
-    st.text_area("Your Message", "")
-    st.button("Send Message")
+st.markdown("<h2 class='section-title'>Get In Touch</h2>", unsafe_allow_html=True)
+st.write("Please fill out the form below to get in touch with me.")
+st.text_input("Your Name", "")
+st.text_input("Your Email", "")
+st.text_area("Your Message", "")
+st.button("Send Message")
 
 # Footer
-st.sidebar.markdown("---")
-st.sidebar.write("© 2024 Kaina Shaikh")
+st.markdown("""
+<footer>
+    <p>© 2024 Kaina Shaikh</p>
+</footer>
+""", unsafe_allow_html=True)
