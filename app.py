@@ -296,21 +296,21 @@ col1, col2, col3 = st.columns([1, 1, 1])  # Equal column widths with some paddin
 
 # Project 1
 with col1:
-    st.image("C:/Users/Kaina/Downloads/Streamlit/images/cyclone.jpg", width=220, caption="Cyclone Intensity Estimation")
+    st.image("cyclone.jpg", width=220, caption="Cyclone Intensity Estimation")
     st.markdown("""
     Developed Quantum Machine Learning Algorithm with accuracy of **93%** showing quantum advantage over classical CNN model for cyclone estimation. Deployed web app using Streamlit
     """)
 
 # Project 2
 with col2:
-    st.image("C:/Users/Kaina/Downloads/Streamlit/images/proj2.png", width=220, caption="Satellite Image Segmentation")
+    st.image("proj2.png", width=220, caption="Satellite Image Segmentation")
     st.markdown("""
     Used SegNet Architecture with deptwise convolution to segement the satellite images and achieved dice loss of 0.24 for predicted images
     """)
 
 # Project 3
 with col3:
-    st.image("C:/Users/Kaina/Downloads/Streamlit/images/proj3.png", width=220, caption="Crop Recommendation System")
+    st.image("proj3.png", width=220, caption="Crop Recommendation System")
     st.markdown("""
    Compared to multiple ML algorithms, Random
 Forest and Naive Bayes achieved 99% percent accuracy which is 15% more than other Machine Learning algorithms.
@@ -321,7 +321,7 @@ col1, col2, col3 = st.columns([1, 1, 1])  # Equal column widths with some paddin
 
 # Project 4
 with col1:
-    st.image("C:/Users/Kaina/Downloads/Streamlit/images/proj4.png", width=220, caption="Superstore Sales Analysis")
+    st.image("proj4.png", width=220, caption="Superstore Sales Analysis")
     st.markdown("""
     Designed dashboard using PowerBI, identified important Key Factor Indicators (KPI’s) for sales
 forecasting time series analysis of next 15 days, trend analysis wrt to location, profit by month and year.
@@ -336,7 +336,7 @@ with col2:
 
 # Example Project 6
 with col3:
-    st.image("C:/Users/Kaina/Downloads/Streamlit/images/respiratory-disease.png", width=220, caption="Chronic Disease Prediction")
+    st.image("respiratory-disease.png", width=220, caption="Chronic Disease Prediction")
     st.markdown("""
     Performed EDA, Implemented Graph Neural Network for classification and compared with
 existing ML algorithms like RF, DT, Gradient Boosting, SVM. GNN achieved accuracy of **98%** similar to Gradient Boosting.
