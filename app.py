@@ -153,7 +153,7 @@ with st.container():
         )
     with right_column:
         if lottie_intro:
-            st_lottie(lottie_intro,width=535, key="intro_animation")
+            st_lottie(lottie_intro,width=450, key="intro_animation")
 
 #st.button("Download Resume")
 st.download_button(
