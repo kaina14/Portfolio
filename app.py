@@ -126,7 +126,7 @@ with st.sidebar:
     st.markdown("<h3 class='nav-item'><a href='#projects'>Projects</a></h3>", unsafe_allow_html=True)
     st.markdown("<h3 class='nav-item'><a href='#research'>Research Works And Publications</a></h3>", unsafe_allow_html=True)
     st.markdown("<h3 class='nav-item'><a href='#achievements'>Achievements</a></h3>", unsafe_allow_html=True)
-    st.markdown("<h3 class='nav-item'><a href='#contact'>Contact Information</a></h3>", unsafe_allow_html=True)
+    st.markdown("<h3 class='nav-item'><a href='#contact'>Let's Connect !</a></h3>", unsafe_allow_html=True)
     #st.markdown("<h3 class='nav-item'><a href='#get_in_touch'>Get In Touch With Me!</a></h3>", unsafe_allow_html=True)
 
 # Main content
