@@ -384,7 +384,7 @@ st.write(
 
 
 # Contact Information Section
-st.markdown("<a id='contact' class='anchor'></a><h2 class='section-title'>🔖 Contact Information</h2>", unsafe_allow_html=True)
+st.markdown("<a id='contact' class='anchor'></a><h2 class='section-title'>📧 Let's Connect !!</h2>", unsafe_allow_html=True)
 st.write("Feel free to reach out to me via email or connect with me on LinkedIn.")
 # Social Icons
 social_icons_data = {
