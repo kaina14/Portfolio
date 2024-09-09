@@ -12,7 +12,7 @@ def load_lottie_url(url: str):
         return None
 
 def get_resume_file():
-    with open("Kaina Shaikh Resume.pdf", "rb") as file:
+    with open("Kaina Shaikh Resume ML.pdf", "rb") as file:
         return file.read()
 
 # Lottie animation URLs
