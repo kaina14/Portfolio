@@ -355,6 +355,7 @@ with st.container():
             """
             - **Deep Learning based Defect Detection and Segmentation for High Energy Material Applications**  
                (Published under the guidance of Indian Scientists at DRDO)
+            - **[Brain Tumor Classification using Transfer Learning and Ensemble Approach](https://irojournals.com/jscp/article/view/6/3/5)**
             - **[Benchmarking Traditional and Graph Neural Network Models for Node Classification in Literature Characters](https://www.irjet.net/archives/V11/i6/IRJET-V11I6183.pdf)**
             """
         )
