@@ -246,8 +246,12 @@ with st.container():
         )
         st.write(
             """
-              - Implementation of core Machine Learning concepts Reinforcement Learning, Recommendation Systems, Causal Inference,
-Probabilistic Graphical Models, Supervised Learning, Deep Learning, Dimensionality Reduction, Unsupervised Learning.
+              - Implemented core machine learning concepts, including Reinforcement Learning, Recommendation Systems, Causal
+Inference, and Probabilistic Graphical Models.
+- Developed a Book Recommendation System, applying collaborative filtering and matrix factorization to suggest
+personalized book recommendations based on user preferences and behavior.
+- Worked on Supervised and Unsupervised Learning techniques, including Dimensionality Reduction and Deep
+Learning, enhancing the accuracy of predictive models.
             """
         )
 
@@ -303,9 +307,10 @@ with col1:
 
 # Project 2
 with col2:
-    st.image("proj2.png", width=200, caption="Satellite Image Segmentation")
+    st.image("brain.png", width=200, caption="Brain Tumor Classification")
     st.markdown("""
-    Used SegNet Architecture with deptwise convolution to segement the satellite images and achieved dice loss of 0.24 for predicted images
+    Developed hybrid approaches using EfficientNetB3+RF and VGG19+RF on MRI
+images, achieving **93%** accuracy with VGG19+RF - a **4%** improvement over KNN+SVM.
     """)
 
 # Project 3
