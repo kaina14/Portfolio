@@ -156,12 +156,12 @@ with st.container():
             st_lottie(lottie_intro,width=450, key="intro_animation")
 
 #st.button("Download Resume")
-st.download_button(
-    label="Download Resume",
-    data=get_resume_file(),
-    file_name="Kaina Shaikh Resume.pdf",
-    mime="application/pdf"
-)
+#st.download_button(
+#    label="Download Resume",
+#    data=get_resume_file(),
+#   file_name="Kaina Shaikh Resume.pdf",
+#    mime="application/pdf"
+#)
 #st.markdown("<hr style='border-top: 3px solid #565BF7;'>", unsafe_allow_html=True)
 #st.write("Wants to Know More About Me?")
 #st.text_input("Ask Anything About Me !!", "")
