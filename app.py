@@ -38,28 +38,12 @@ st.markdown("""
         
         .sidebar .sidebar-content {
             background-color: #2A2B2E;
-            padding: 10px;
+            padding: 20px;
         }
         
         h1, h2, h3, h4, h5, h6 {
             color: #FFFFFF;
             font-weight: 530;
-        }
-
-        .sidebar-title {
-            font-size: 18px;
-            font-weight: bold;
-            color: #FFFFFF;
-            margin-bottom: 15px;
-            text-decoration: none;
-        }
-        .sidebar-title:hover {
-            color: #F0F0F0;
-        }
-        /* Remove bullet points */
-        ul {
-            list-style-type: none;
-            padding-left: 0;
         }
         
         .stMarkdown {
@@ -74,6 +58,12 @@ st.markdown("""
     padding-left: 20px; /* Add padding to make space for the bullet */
         }
         
+/*        .nav-item::before {
+    content: '•'; /* Bullet character */
+    position: absolute;
+    left: 0; /* Position the bullet at the start of the item */
+    color: #E5E5E5; /* Bullet color */
+}*/
         .nav-item a {
             text-decoration: none;
             color: #4A90E2;
