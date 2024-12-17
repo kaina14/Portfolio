@@ -38,12 +38,28 @@ st.markdown("""
         
         .sidebar .sidebar-content {
             background-color: #2A2B2E;
-            padding: 20px;
+            padding: 10px;
         }
         
         h1, h2, h3, h4, h5, h6 {
             color: #FFFFFF;
             font-weight: 530;
+        }
+
+        .sidebar-title {
+            font-size: 18px;
+            font-weight: bold;
+            color: #FFFFFF;
+            margin-bottom: 15px;
+            text-decoration: none;
+        }
+        .sidebar-title:hover {
+            color: #F0F0F0;
+        }
+        /* Remove bullet points */
+        ul {
+            list-style-type: none;
+            padding-left: 0;
         }
         
         .stMarkdown {
