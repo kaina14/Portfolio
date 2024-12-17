@@ -74,12 +74,6 @@ st.markdown("""
     padding-left: 20px; /* Add padding to make space for the bullet */
         }
         
-        .nav-item::before {
-    content: '•'; /* Bullet character */
-    position: absolute;
-    left: 0; /* Position the bullet at the start of the item */
-    color: #E5E5E5; /* Bullet color */
-}
         .nav-item a {
             text-decoration: none;
             color: #4A90E2;
