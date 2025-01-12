@@ -352,6 +352,7 @@ with st.container():
     with left_column:
         st.write(
             """
+            - **[Cyclone Intensity Estimation using Quantum Machine Learning](https://ieeexplore.ieee.org/document/10816900)**
             - **Deep Learning based Defect Detection and Segmentation for High Energy Material Applications**  
                (Published under the guidance of Indian Scientists at DRDO)
             - **[Brain Tumor Classification using Transfer Learning and Ensemble Approach](https://irojournals.com/jscp/article/view/6/3/5)**
