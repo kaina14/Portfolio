@@ -182,7 +182,8 @@ with st.container():
       PowerBI, Tableau<br>
       <br>
     - <strong>Technologies :</strong><br>
-      Data Science, Artificial Intelligence, Machine Learning, Deep Learning, Quantum AI, NLP, LLMs, Gen AI
+      Data Science, Artificial Intelligence, Machine Learning, Deep Learning, Quantum AI, NLP, LLMs, Gen AI<br>
+      <br>
     - <strong>Cloud :</strong><br>  
       Azure Machine Learning
     """,
