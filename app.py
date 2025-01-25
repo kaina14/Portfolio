@@ -178,14 +178,11 @@ with st.container():
     - <strong>Tools & Libraries :</strong><br>
       Git, Numpy, Matplotlib, Sklearn, Pandas, Tensorflow, Pytorch, OpenCV, Streamlit, Apache Spark<br>
       <br>
-    - <strong>Visualization :</strong><br>
-      PowerBI, Tableau<br>
+    - <strong>Cloud :</strong><br>
+      Azure Machine Learning<br>
       <br>
     - <strong>Technologies :</strong><br>
       Data Science, Artificial Intelligence, Machine Learning, Deep Learning, Quantum AI, NLP, LLMs, Gen AI<br>
-      <br>
-    - <strong>Cloud :</strong><br>  
-      Azure Machine Learning
     """,
     unsafe_allow_html=True
 ) 
