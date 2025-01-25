@@ -173,16 +173,18 @@ with st.container():
         st.write(
     """
     - <strong>Programming Languages :</strong><br>
-      C++, Python, SQL<br>
+      Python, SQL, C++<br>
       <br>
     - <strong>Tools & Libraries :</strong><br>
-      Git, Numpy, Matplotlib, Sklearn, Pandas, Tensorflow, Pytorch, OpenCV, Streamlit<br>
+      Git, Numpy, Matplotlib, Sklearn, Pandas, Tensorflow, Pytorch, OpenCV, Streamlit, Apache Spark<br>
       <br>
     - <strong>Visualization :</strong><br>
       PowerBI, Tableau<br>
       <br>
     - <strong>Technologies :</strong><br>
-      Data Science, Artificial Intelligence, Machine Learning, Deep Learning, Quantum AI
+      Data Science, Artificial Intelligence, Machine Learning, Deep Learning, Quantum AI, NLP, LLMs, Gen AI
+    - <strong>Cloud :</strong><br>  
+      Azure Machine Learning
     """,
     unsafe_allow_html=True
 ) 
